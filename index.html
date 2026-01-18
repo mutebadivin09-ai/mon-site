@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site</title>
+    <style>
+        /* ===== STYLE GLOBAL ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f4fd8;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #1f4fd8;
+            border-bottom: 2px solid #1f4fd8;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* ===== BIOGRAPHIE ===== */
+        .biographie {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .bio-info {
+            flex: 2;
+        }
+
+        .bio-info p {
+            background-color: #e7f0ff;
+            padding: 10px;
+            border-left: 5px solid #1f4fd8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .bio-photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .bio-photo img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #1f4fd8;
+        }
+
+        /* ===== GALERIE D’IMAGES ===== */
+        .galerie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .photo {
+            text-align: center;
+            width: 220px;
+        }
+
+        .photo img {
+            width: 100px;
+            height: 220px;
+            object-fit: cover; /* garde les proportions */
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .photo p {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        /* ===== TABLEAU ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #1f4fd8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1f4fd8;
+            color: white;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #1f4fd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur mon site</h1>
+</header>
+
+<div class="container">
+
+    <!-- ===== BIOGRAPHIE ===== -->
+    <h2>Biographie</h2>
+    <div class="biographie">
+        <div class="bio-info">
+            <p><b>Nom :</b>KABAMBA</p>
+            <p><b>Postnom :</b>MALUMBA</p>
+            <p><b>Prénom :</b>JEAN</p>
+            <p><b>Date de naissance :</b>18 Novembre 2007</p>
+            <p><b>Lieu de naissance :</b>KANANGA</p>
+            <p><b>Études :</b>Université de Lubumbashi</p>
+            <p><b>Promotion :</b>PRE ESI C</p>
+        </div>
+        <div class="bio-photo">
+            <img src="profil.jpg" alt="Photo actuelle">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- ===== GALERIE ENFANCE ===== -->
+    <h2>Photos d’enfance</h2>
+    <div class="galerie">
+        <div class="photo">
+            <img src="aga1.jpg" alt="Enfance 1">
+            <h2>Mon enfance</h2>
+            <p><strong>Mon enfance a été une période marquée par les découvertes, les apprentissages et la construction de mes valeurs. C’est durant ces années que j’ai appris l’importance du travail, de la persévérance et du respect.
+                Même face aux difficultés, j’ai su garder l’espoir et l’envie de réussir. Ces expériences ont profondément contribué à façonner la personne que je suis aujourd’hui </strong>.</p>
+        </div>
+        <div class="photo">
+            <img src="age2.jpg" alt="Enfance 2">
+            
+            <p>Souvenir d’enfance</p>
+        </div>
+    </div>
+
+    <!-- ===== GALERIE ACTUELLE ===== -->
+    <h2>Photos actuelles</h2>
+    <div class="galerie">
+        <div class="photo">
+            <img src="age3.jpg" alt="Actuel 1">
+            <h2>Mon développement</h2>
+            <p><strong>Je suis né à Kananga le 18 novembre 2007. Depuis mon plus jeune âge, j’ai toujours été animé par la curiosité et l’envie d’apprendre. Chaque étape de ma vie m’a permis de grandir, de mieux comprendre le monde et de forger ma personnalité.
+                Au fil du temps, j’ai développé une mentalité tournée vers l’évolution personnelle, la discipline et la créativité. Les défis rencontrés ont renforcé ma détermination à avancer et à construire un avenir solide.</strong></p>
+        </div>
+        <div class="photo">
+            <img src="age4.jpg" alt="Actuel 2">
+            <h2>Mes rêves</h2>
+            <p><strong>Je suis une personne ambitieuse qui croit fermement en ses rêves. Je rêve de réussir dans le domaine du numérique, de la technologie et de la création de contenu, tout en ayant un impact positif sur mon entourage et sur la société.
+                Pour moi, rêver ne suffit pas : je transforme mes idées en actions concrètes et je travaille chaque jour pour me rapprocher de mes objectifs.</strong></p>
+        </div>
+        <div class="photo">
+            <img src="age5.jpg" alt="Actuel 3">
+            <h2>Ma vie actuelle</h2>
+            <p><strong>Aujourd’hui, je suis créateur de contenu, graphiste designer et vidéaste. À travers le numérique, j’exprime ma créativité, je partage mes connaissances et je développe des projets qui me permettent d’évoluer continuellement.
+                En parallèle, je poursuis mes études à l’Université de Lubumbashi, au sein de l’École Supérieure d’Ingénieurs, promotion PRE-ESI C. Cette formation me permet de renforcer mes compétences techniques et d’allier théorie et pratique.
+                Cette combinaison entre le monde académique et la création digitale me permet de construire un avenir tourné vers l’innovation, la technologie et l’impact positif.</strong></p>
+        </div>
+    </div>
+
+    <!-- ===== TABLEAU ===== -->
+    <h2>Tableau</h2>
+    <table>
+        <tr>
+            <th>Colonne 1</th>
+            <th>Colonne 2</th>
+            <th>Colonne 3</th>
+            <th>Colonne 4</th>
+        </tr>
+        <tr><td>1</td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td></tr>
+        <tr><td>5</td><td></td><td></td><td></td></tr>
+        <tr><td>6</td><td></td><td></td><td></td></tr>
+        <tr><td>7</td><td></td><td></td><td></td></tr>
+        <tr><td>8</td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td></td><td></td><td></td></tr>
+        <tr><td>12</td><td></td><td></td><td></td></tr>
+        <tr><td>13</td><td></td><td></td><td></td></tr>
+        <tr><td>14</td><td></td><td></td><td></td></tr>
+        <tr><td>15</td><td></td><td></td><td></td></tr>
+        <tr><td>16</td><td></td><td></td><td></td></tr>
+    </table>
+
+</div>
+
+<footer>
+    <p>© 2026 – Mon site personnel | TP Informatique</p>
+</footer>
+
+</body>
+</html>
